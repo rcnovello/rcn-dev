@@ -1,0 +1,15 @@
+{
+  "name": "prj",
+  "version": "1.0.0",
+  "description": "prjTeste",
+  "main": "/",
+  "scripts": {
+    "test": "console.log(\"teste\")"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2"
+  }
+}
