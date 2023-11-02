@@ -7,7 +7,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views')); // Use path.join para construir o caminho correto
 
-app.use(express.static(path.join(__dirname, './')));
+app.use(express.static(path.join(__dirname, '/')));
+
 const http = require('node:http');
 
 const hostname = '127.0.0.1';
