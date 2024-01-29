@@ -1,10 +1,10 @@
 {
   "name": "prj",
   "version": "1.0.0",
-  "description": "prjTeste",
-  "main": "/",
+  "description": "prjRCNDev",
+  "main": "/src/server.js",
   "scripts": {
-    "test": "console.log(\"teste\")"
+    "start": "node ./src/server.js"
   },
   "author": "",
   "license": "ISC",
