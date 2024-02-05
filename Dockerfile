@@ -3,7 +3,7 @@
 FROM node:18
 
 # Set the working directory in the container
-WORKDIR /usr/app
+WORKDIR /usr/src/app
 
 # Copy the application files into the working directory
 COPY package*.json ./
@@ -16,4 +16,4 @@ COPY . .
 EXPOSE 3000
 
 # Define the entry point for the container
-CMD npm start
+CMD [ "node", "app.js" ]
