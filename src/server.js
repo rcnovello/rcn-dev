@@ -11,7 +11,7 @@ app.use(express.static(path.join(__dirname, '/')));
 
 const http = require('node:http');
 
-const hostname = 'localhost';
+const hostname = '0.0.0.0';
 const port = 3000;
 
 
