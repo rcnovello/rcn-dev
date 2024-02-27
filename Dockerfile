@@ -24,4 +24,4 @@ EXPOSE 3000
 
 ## Não se repete no Dockerfile
 ## Executa o comando npm start para iniciar o script que que está no package.json
-CMD [ "node", "server.js" ]
+CMD [ "node", "./src/server.js" ]
