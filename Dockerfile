@@ -1,6 +1,8 @@
 ## Comando obrigatório
 ## Baixa a imagem do node com versão alpine (versão mais simplificada e leve)
-FROM node:alpine
+FROM node:16
+
+ENV NODE_ENV=production
 
 ## Define o local onde o app vai ficar no disco do container
 ## Pode ser o diretório que você quiser
@@ -10,7 +12,7 @@ WORKDIR /usr/app
 COPY package*.json ./
 
 ## Executa npm install para adicionar as dependências e criar a pasta node_modules
-RUN npm install
+RUN npm install --production
 
 ## Copia tudo que está no diretório onde o arquivo Dockerfile está 
 ## para dentro da pasta /usr/app do container
@@ -22,4 +24,4 @@ EXPOSE 3000
 
 ## Não se repete no Dockerfile
 ## Executa o comando npm start para iniciar o script que que está no package.json
-CMD npm start
+CMD [ "node", "server.js" ]
