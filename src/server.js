@@ -23,6 +23,9 @@ app.get('/', (req, res) => {
 //const server = http.createServer(app);
 
 //server.listen(port, hostname, () => {
-app.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
+//app.listen(port, hostname, () => {
+  //console.log(`Server running at http://${hostname}:${port}/`);
+//});
+app.listen(port, () => {
+  console.log(`App listening at http://localhost:${port}`);
 });
