@@ -9,9 +9,10 @@ app.set('views', path.join(__dirname, 'views')); // Use path.join para construir
 
 app.use(express.static(path.join(__dirname, '/')));
 
-const http = require('node:http');
+//const http = require('node:http');
 
-const hostname = '0.0.0.0';
+//const hostname = '0.0.0.0';
+const hostname = 'http://localhost';
 const port = 3000;
 
 
@@ -19,7 +20,7 @@ app.get('/', (req, res) => {
   res.render('index');
 });
 
-const server = http.createServer(app);
+//const server = http.createServer(app);
 
 server.listen(port, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/`);
