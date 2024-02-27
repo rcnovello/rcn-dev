@@ -2,8 +2,6 @@
 ## Baixa a imagem do node com versão alpine (versão mais simplificada e leve)
 FROM node:alpine
 
-ENV PORT 3000
-
 ## Define o local onde o app vai ficar no disco do container
 ## Pode ser o diretório que você quiser
 WORKDIR /usr/app
