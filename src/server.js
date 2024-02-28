@@ -20,6 +20,10 @@ app.get('/', (req, res) => {
   res.render('index');
 });
 
+app.get('/politica_privacidade', (req, res) => {
+  res.render('politica_privacidade');
+});
+
 //const server = http.createServer(app);
 
 //server.listen(port, hostname, () => {
