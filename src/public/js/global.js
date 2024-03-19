@@ -18,13 +18,9 @@ function funcPoliticaPrivacidade(){
   cNavPoliticaPrivacidade.prop("hidden", true);
 
   const cPrivacyPolicyAccepted = getCookie('privacyPolicyAccepted');
-  console.log(cPrivacyPolicyAccepted);
 
   if (cPrivacyPolicyAccepted != 'true'){  
 
-    console.log(cPrivacyPolicyAccepted);
-
-       
     cNavPoliticaPrivacidade.prop("hidden", false);
 
     cNavPoliticaPrivacidade.each(function() {

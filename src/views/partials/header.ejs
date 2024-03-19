@@ -1,18 +1,21 @@
 <nav class="white" role="navigation">
     <div class="nav-wrapper container">
-
         <a id="logo-container" href="/">
-        <img src="/public/img/imgLogoRetangular.png" width="150px" height="50">
+            <img src="/public/img/imgLogoRetangular.png" width="150px" height="50">
         </a>
         <ul class="right hide-on-med-and-down">
-        <li><a target="_blank" href="https://comofazerinformatica.com.br">Acesse: comofazerinformatica.com.br</a></li>
+            <li><a target="_blank" href="https://comofazerinformatica.com.br">Acesse: comofazerinformatica.com.br</a></li>
         </ul>
 
-        <ul id="nav-mobile" class="sidenav">
-        <li><a target="_blank" href="https://comofazerinformatica.com.br">Acesse: comofazerinformatica.com.br</a></li>
+
+        <ul id="slide-out" class="sidenav">
+            <li><a class="sidenav-close" href="#!"><i class="material-symbols-outlined">
+                cancel_presentation
+            </i></a></li>
+            <li><a target="_blank" href="https://comofazerinformatica.com.br" data-target="nav-mobile" class="sidenav-trigger">Acesse: ComoFazerInformatica</a></li>
         </ul>
-        <a target="_blank" href="https://comofazerinformatica.com.br" data-target="nav-mobile" class="sidenav-trigger">
-        <i class="material-icons">Menu</i>
-        </a>
+        <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+
+
     </div>
     </nav>
