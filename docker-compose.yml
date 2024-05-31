@@ -1,0 +1,6 @@
+services:
+  node_rcndev_prod:
+    build: ./ 
+    ports:      
+      - "3001:3001"
+    command: npm start
