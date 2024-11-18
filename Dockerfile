@@ -22,7 +22,7 @@ RUN pm2 install pm2-logrotate
 COPY . .
 
 ## Container ficará ouvindo os acessos na porta 3000
-EXPOSE 3001
+EXPOSE 80
 
 ## Não se repete no Dockerfile
 ## Executa o comando npm start para iniciar o script que que está no package.json
